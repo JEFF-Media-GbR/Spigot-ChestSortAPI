@@ -1,4 +1,4 @@
-package de.jeff_media.ChestSort;
+package de.jeff_media.ChestSortAPI;
 
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;

@@ -6,10 +6,10 @@
 
     <groupId>de.jeff_media</groupId>
     <artifactId>ChestSortAPI</artifactId>
-    <name>JeffChestSort</name>
+    <name>ChestSortAPI</name>
     <url>https://www.chestsort.de</url>
-    <description>Automatically sorts your chests!</description>
-    <version>8.13.1</version>
+    <description>ChestSort API for plugin developers</description>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
