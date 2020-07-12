@@ -1,7 +1,7 @@
 package de.jeff_media.ChestSortAPI;
 
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -10,27 +10,27 @@ import org.jetbrains.annotations.Nullable;
  */
 public class Sortable implements ISortable {
     private Inventory inv;
-    private Player p = null;
+    private InventoryHolder h = null;
 
     public Sortable() {
 
     }
 
-    public Sortable(Player p) {
-        this.p=p;
+    public Sortable(InventoryHolder h) {
+        this.h=h;
     }
 
-    public void setAssociatedPlayer(@NotNull Player player) {
-        this.p=p;
+    public void setHolder(@NotNull InventoryHolder player) {
+        this.h=h;
     }
 
-    public void removeAssociatedPlayer() {
-        this.p=null;
+    public void removeHolder() {
+        this.h=null;
     }
 
     @Nullable
-    public Player getAssociatedPlayer() {
-        return p;
+    public InventoryHolder getHolder() {
+        return h;
     }
 
     @Override
