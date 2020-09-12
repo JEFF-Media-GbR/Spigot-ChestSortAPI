@@ -1,11 +1,14 @@
 package de.jeff_media.ChestSortAPI;
 
+import java.util.Map;
+
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -13,6 +16,8 @@ public class ChestSortEvent extends Event implements Cancellable {
 
     private static final HandlerList HANDLERS = new HandlerList();
     final Inventory inv;
+    // For each ItemStack, a map of "{placeholder}", "sortString" pairs.
+    Map<ItemStack, Map<String, String>> invSortableMaps;
     boolean cancelled = false;
     Location loc;
     Player p;
@@ -34,6 +39,14 @@ public class ChestSortEvent extends Event implements Cancellable {
 
     public Inventory getInventory() {
         return inv;
+    }
+
+    public Map<ItemStack, Map<String, String>> getSortableMaps() {
+        return invSortableMaps;
+    }
+
+    public void setSortableMaps(Map<ItemStack, Map<String, String>> sortableMap) {
+        invSortableMaps = sortableMap;
     }
 
     @Nullable
