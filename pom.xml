@@ -9,7 +9,7 @@
     <name>ChestSortAPI</name>
     <url>https://www.chestsort.de</url>
     <description>ChestSort API for plugin developers</description>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
 
     <properties>

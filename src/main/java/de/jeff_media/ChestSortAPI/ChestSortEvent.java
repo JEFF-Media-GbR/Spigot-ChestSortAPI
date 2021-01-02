@@ -1,5 +1,7 @@
 package de.jeff_media.ChestSortAPI;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import org.bukkit.Location;
@@ -21,9 +23,13 @@ public class ChestSortEvent extends Event implements Cancellable {
     boolean cancelled = false;
     Location loc;
     Player p;
+    List<ItemStack> unmovableItemStacks;
+    List<Integer> unmovableSlots;
 
     public ChestSortEvent(Inventory inv) {
         this.inv = inv;
+        this.unmovableItemStacks = new ArrayList<>();
+        this.unmovableSlots = new ArrayList<>();
     }
 
     public static HandlerList getHandlerList() {
@@ -55,6 +61,30 @@ public class ChestSortEvent extends Event implements Cancellable {
     }
 
     public void setPlayer(Player p) { this.p=p; }
+
+    public void setUnmovable(int slot) {
+        unmovableSlots.add(slot);
+    }
+
+    public void setUnmovable(ItemStack itemStack) {
+        unmovableItemStacks.add(itemStack);
+    }
+
+    public void removeUnmovable(int slot) {
+        unmovableSlots.remove(slot);
+    }
+
+    public void removeUnmovable(ItemStack itemStack) {
+        unmovableItemStacks.remove(itemStack);
+    }
+
+    public boolean isUnmovable(int slot) {
+        return unmovableSlots.contains(slot);
+    }
+
+    public boolean isUnmovable(ItemStack itemStack) {
+        return unmovableItemStacks.contains(itemStack);
+    }
 
     public @NotNull HandlerList getHandlers() {
         return HANDLERS;
