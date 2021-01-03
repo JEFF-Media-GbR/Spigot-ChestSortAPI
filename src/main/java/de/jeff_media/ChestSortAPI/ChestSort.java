@@ -3,6 +3,9 @@ package de.jeff_media.ChestSortAPI;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
+/**
+ * ChestSort's main class. Should only be used to access the API (#getAPI())
+ */
 public interface ChestSort {
 
     /**
