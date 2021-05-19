@@ -9,7 +9,7 @@
     <name>ChestSortAPI</name>
     <url>https://www.chestsort.de</url>
     <description>ChestSort API for plugin developers</description>
-    <version>2.0.0</version>
+    <version>3.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -73,7 +73,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.16.1-R0.1-SNAPSHOT</version>
+            <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -81,6 +81,11 @@
             <artifactId>annotations</artifactId>
             <version>19.0.0</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.jeff_media</groupId>
+            <artifactId>ChestSort</artifactId>
+            <version>10.0.0</version>
         </dependency>
     </dependencies>
 

@@ -1,4 +1,4 @@
-package de.jeff_media.ChestSortAPI;
+package de.jeff_media.chestsort;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,6 @@ import java.util.Map;
 
 import org.bukkit.Location;
 import org.bukkit.entity.HumanEntity;
-import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;

@@ -1,4 +1,4 @@
-package de.jeff_media.ChestSortAPI;
+package de.jeff_media.chestsort;
 
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
