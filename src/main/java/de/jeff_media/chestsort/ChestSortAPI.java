@@ -13,6 +13,18 @@ public class ChestSortAPI {
     }
 
     /**
+     * Checks whether ChestSort is installed.
+     * @return True when a compatible version of ChestSort is installed.
+     */
+    public static boolean isChestSortInstalled() {
+        try {
+            return ChestSortPlugin.getInstance() != null;
+        } catch (Exception ignored) {
+            return false;
+        }
+    }
+
+    /**
      * Sorts any given inventory
      * @param inv Inventory to be sorted
      */
