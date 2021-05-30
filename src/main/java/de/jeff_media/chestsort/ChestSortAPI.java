@@ -1,6 +1,5 @@
 package de.jeff_media.chestsort;
 
-import de.jeff_media.ChestSort.ChestSortPlugin;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
