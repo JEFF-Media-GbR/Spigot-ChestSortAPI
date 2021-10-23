@@ -9,7 +9,7 @@
     <name>ChestSortAPI</name>
     <url>https://www.chestsort.de</url>
     <description>ChestSort API for plugin developers</description>
-    <version>11.0.0-SNAPSHOT</version>
+    <version>12.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -85,7 +85,7 @@
         <dependency>
             <groupId>de.jeff_media</groupId>
             <artifactId>ChestSort</artifactId>
-            <version>11.0.0-SNAPSHOT</version>
+            <version>12.0.2</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
