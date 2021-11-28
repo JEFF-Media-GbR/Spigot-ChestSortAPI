@@ -9,7 +9,7 @@
     <name>ChestSortAPI</name>
     <url>https://www.chestsort.de</url>
     <description>ChestSort API for plugin developers</description>
-    <version>11.0.0-SNAPSHOT</version>
+    <version>12.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -63,17 +63,13 @@
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
-        <repository>
-            <id>jeff-media-gbr</id>
-            <url>https://repo.jeff-media.de/maven2</url>
-        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <version>1.18-pre8-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -85,15 +81,15 @@
         <dependency>
             <groupId>de.jeff_media</groupId>
             <artifactId>ChestSort</artifactId>
-            <version>11.0.0-SNAPSHOT</version>
+            <version>12.0.6</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
 
     <distributionManagement>
         <repository>
-            <id>jeff-ftp</id>
-            <url>ftps://ftp.jeff-media.de/maven2</url>
+            <id>jeff-media-public</id>
+            <url>https://hub.jeff-media.com/nexus/repository/jeff-media-public/</url>
         </repository>
     </distributionManagement>
 
