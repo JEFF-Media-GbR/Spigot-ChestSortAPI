@@ -16,6 +16,7 @@ import java.util.Map;
 /**
  * This event is called whenever ChestSort attempts to sort an {@link org.bukkit.inventory.Inventory}. Can be cancelled to prevent ChestSort from manipulating this {@link org.bukkit.inventory.Inventory}.
  * You can also mark certain slots or items as unmovable or change the final sorting result.
+ * The inventory will only be sorted AFTER this event has been called, and only if it wasn't cancelled. To check whether an inventory was actually sorted, see {@link ChestSortPostSortEvent}
  */
 public class ChestSortEvent extends Event implements Cancellable {
 
